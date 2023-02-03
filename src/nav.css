@@ -1,0 +1,40 @@
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    padding: 0 45px;
+}
+
+.parent-cone{
+    width: 50px;
+    height: 21px;
+    border: solid 1px;
+    border-radius: 20px;
+    position: relative;
+    padding: 1px;
+    transition: 3000s ease-in;
+    cursor: pointer;
+}
+
+.child-ball{
+width: 17px;
+height: 17px;
+border-radius: 25px;
+background: #000;
+position: absolute;
+top: 1px;
+/* transform: translateX(0%); */
+transition: 200ms ease-in;
+}
+
+
+
+h3{
+    font-weight: 400;
+}
+
+.switch{
+    transform: translateX(29px);
+    /* left: 20px; */
+}

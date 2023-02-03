@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useEffect, useState } from 'react'
+import Nav from './Component/Nav'
+import Header from './Component/Header'
+import Skill from './Component/Skill'
+import Footer from './Component/Footer'
+import '../src/darkmode.css'
+import Theme from '../src/Theme'
+
+
+export const ThemeContext = createContext(null)
 
 function App() {
+  const [themes, setTheme] = useState(Theme.dark)
+
+  function toggleTheme() {
+    setTheme((curTheme) => curTheme === Theme.light ? setTheme(Theme.dark) : setTheme(Theme.light))
+    // setTheme((curTheme) => curTheme === 'light' ? setTheme('dark') : setTheme('light'))
+  }
+
+  useEffect(() => {
+    console.log(themes);
+  })
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeContext.Provider value={{ themes, setTheme }}>
+        <Nav />
+        <Header />
+        <Skill />
+        <Footer />
+      </ThemeContext.Provider>
+    </>
   );
 }
 

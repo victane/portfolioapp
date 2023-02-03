@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+
+}
+.footer span {
+    margin: 5px;
+}
+
+@media (max-width: 850px) {
+    
+    .contact-span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 450px) {
+    .footer{
+        flex-direction: column;
+    }
+}
