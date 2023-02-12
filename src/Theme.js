@@ -1,10 +1,10 @@
 const themes = {
     light: {
-        background: '#fff',
+        backgroundColor: '#fff',
         color: '#000'
     },
     dark: {
-        background: '#000',
+        backgroundColor: '#000',
         color: '#fff'
     }
 }

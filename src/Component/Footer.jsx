@@ -1,6 +1,6 @@
 import '../footer.css'
 
-const Footer = () => {
+const Footer = ({ style }) => {
     return (
         <div className='footer'>
             <div className='contact-span'>
@@ -9,12 +9,12 @@ const Footer = () => {
                     Interested in working together?
                 </span>
                 <span>
-                    <a href="#">contact me here</a>
+                    <a style={style} href="mailto:sundayvictane@gmail.com">contact me here</a>
                 </span>
             </div>
             <div className='project-span' >
-                <span><a href="#">Github</a> </span>
-                <span><a href="#">Medium</a> </span>
+                <span><a style={style} href="https://github.com/victane">Github</a> </span>
+                <span><a style={style} href="https://medium.com/@sundayvictane">Medium</a> </span>
             </div>
         </div>
     );

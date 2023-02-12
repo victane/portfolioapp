@@ -6,16 +6,6 @@
     padding: 0 45px;
 }
 
-.parent-cone{
-    width: 50px;
-    height: 21px;
-    border: solid 1px;
-    border-radius: 20px;
-    position: relative;
-    padding: 1px;
-    transition: 3000s ease-in;
-    cursor: pointer;
-}
 
 .child-ball{
 width: 17px;

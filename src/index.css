@@ -18,6 +18,10 @@ a:hover{
   color: dimgrey;
 }
 
+.app-cover{
+  height: 100vh;
+}
+
 @media (max-width: 850px) {
   .App {
     padding: 5%;
