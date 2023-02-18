@@ -9,7 +9,7 @@ const Footer = ({ style }) => {
                     Interested in working together?
                 </span>
                 <span>
-                    <a style={style} href="mailto:sundayvictane@gmail.com">contact me here</a>
+                    <a className='contact-link' style={style} href="mailto:sundayvictane@gmail.com">contact me here</a>
                 </span>
             </div>
             <div className='project-span' >
