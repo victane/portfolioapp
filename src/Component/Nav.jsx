@@ -1,15 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../nav.css'
 
 
 function Nav({ changetheme }) {
-    console.log(changetheme);
     const [isToggled, setToggle] = useState('child-ball')
-
     function toggler() {
         isToggled === 'child-ball' ? setToggle('child-ball switch') : setToggle('child-ball')
         changetheme()
     }
+    useEffect(() => {
+        changetheme()
+    }, [])
 
     const parentconeStyles = {
         width: '50px',
