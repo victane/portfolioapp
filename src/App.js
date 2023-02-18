@@ -13,7 +13,6 @@ function App() {
 
   function toggleTheme() {
     setTheme((curTheme) => curTheme === Theme.light ? setTheme(Theme.dark) : setTheme(Theme.light))
-    // setTheme((curTheme) => curTheme === 'light' ? setTheme('dark') : setTheme('light'))
   }
 
 
@@ -27,7 +26,6 @@ function App() {
         <Skill />
         <Footer
           style={themes}
-        // changetheme={toggleTheme}
         />
       </div>
     </>
